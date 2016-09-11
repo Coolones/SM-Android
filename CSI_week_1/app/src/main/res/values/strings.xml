@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CSI_week_1</string>
+    <string name="description">description</string>
+    <string name="Name">Name: </string>
+    <string name="Gender">Gender: </string>
+    <string name="Age">Age: </string>
+    <string name="Bounty">Bounty: </string>
+    <string name="Details">Details</string>
+    <string name="details">The robber was carrying a firearm, or something that seemed like it, in the gas station. He threatened an employee and then went off. The perpetrator has captured money. The police were shortly after the robbery on the site and did expanded searching in the area. The culprit is a man of about 18 years. He has a slightly tinted appearance. Last night he was wearing a black hoodie, had a cap and jeans. He was also wearing white shoes.</string>
+    <string name="Report">Report</string>
+    <string name="title_activity_report">Report</string>
+    <string name="TP">Take Picture</string>
+    <string name="GPS">GPS position</string>
+    <string name="C113">Call 113</string>
+    <string name="Back">Back</string>
+    <string name="Send">Send</string>
+</resources>
