@@ -1,0 +1,134 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/HotYellow</item>
+        <item name="colorPrimaryDark">@color/Orange</item>
+        <item name="colorAccent">@color/Orange</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/buttonshape</item>
+        <item name="android:textColor">@color/Orange</item>
+    </style>
+
+    <style name="ImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Table">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TableRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ImageView.Wanted">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:contentDescription">@string/description</item>
+    </style>
+
+    <style name="SuspectInfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Table.SuspectInfo">
+        <item name="android:background">@color/HotYellow</item>
+    </style>
+
+    <style name="TableRow.SuspectInfo">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@color/Orange</item>
+    </style>
+
+    <style name="TableText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Details">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Orange</item>
+    </style>
+
+    <style name="ScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:panelColorBackground">@color/HotYellow</item>
+    </style>
+
+    <style name="Button.CenterH">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="Button.TR">
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="ImageView.Wanted.BelowGPS">
+        <item name="android:layout_below">@id/GPS</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="Button.TL">
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="Button.CenterH.BelowWanted">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@id/suspect</item>
+    </style>
+
+    <style name="Button.BL">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="Button.BR">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="ImageView.Line">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="LinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LinearLayout.Verticle">
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="ListView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/HotYellow</item>
+    </style>
+
+</resources>
