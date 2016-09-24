@@ -12,7 +12,7 @@
     <LinearLayout style="@style/LinearLayout.Verticle">
 
         <ListView
-            android:id="@+id/lisViewCriminals"
+            android:id="@+id/listViewCriminals"
             style="@style/ListView">
 
         </ListView>

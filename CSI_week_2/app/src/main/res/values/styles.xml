@@ -3,16 +3,16 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/HotYellow</item>
-        <item name="colorPrimaryDark">@color/Orange</item>
-        <item name="colorAccent">@color/Orange</item>
+        <item name="colorPrimary">@color/LightBlue</item>
+        <item name="colorPrimaryDark">@color/Blue</item>
+        <item name="colorAccent">@color/Blue</item>
     </style>
 
     <style name="Button">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/buttonshape</item>
-        <item name="android:textColor">@color/Orange</item>
+        <item name="android:textColor">@color/Blue</item>
     </style>
 
     <style name="ImageView">
@@ -31,26 +31,35 @@
     </style>
 
     <style name="ImageView.Wanted">
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_width">150dp</item>
         <item name="android:layout_marginTop">5dp</item>
         <item name="android:layout_marginBottom">5dp</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:contentDescription">@string/description</item>
     </style>
 
+    <style name="ImageView.ListView">
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_width">150dp</item>
+    </style>
+
     <style name="SuspectInfo">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_margin">20dp</item>
         <item name="android:orientation">vertical</item>
     </style>
 
     <style name="Table.SuspectInfo">
-        <item name="android:background">@color/HotYellow</item>
+        <item name="android:background">@color/LightBlue</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
     </style>
 
     <style name="TableRow.SuspectInfo">
         <item name="android:layout_margin">5dp</item>
-        <item name="android:background">@color/Orange</item>
+        <item name="android:background">@color/Blue</item>
     </style>
 
     <style name="TableText">
@@ -68,18 +77,20 @@
     <style name="Text">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/Orange</item>
+        <item name="android:textColor">@color/Blue</item>
     </style>
 
     <style name="ScrollView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">80dp</item>
-        <item name="android:panelColorBackground">@color/HotYellow</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:panelColorBackground">@color/LightBlue</item>
     </style>
 
     <style name="Button.CenterH">
         <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
     </style>
 
     <style name="Button.TR">
@@ -128,7 +139,11 @@
     <style name="ListView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@color/HotYellow</item>
+        <item name="android:background">@color/LightBlue</item>
+    </style>
+
+    <style name="ListView.Crimes">
+        <item name="android:layout_height">115dp</item>
     </style>
 
 </resources>

@@ -15,23 +15,20 @@ public class criminalslist extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_criminalslist);
 
-        ListView listView = (ListView) findViewById(R.id.lisViewCriminals);
-        final String[] criminals = getResources().getStringArray(R.array.names);
+        CriminalProvider criminalProvider = new CriminalProvider(this);
+        CriminalListAdapter criminalListAdapter = new CriminalListAdapter(this, criminalProvider.GetCriminals());
 
-        listView.setAdapter(new ArrayAdapter<String>(
-                this, android.R.layout.simple_list_item_1, criminals
-                )
-            );
+        ListView listView = (ListView) findViewById(R.id.listViewCriminals);
+
+        listView.setAdapter(criminalListAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String name = criminals[position];
 
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
 
-                intent.putExtra("name", name);
+                intent.putExtra("chosenCriminalPosition", position);
                 startActivity(intent);
             }
         });
