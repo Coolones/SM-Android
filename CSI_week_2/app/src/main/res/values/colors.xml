@@ -9,4 +9,7 @@
     <color name="HotYellow">#FACC2E</color>
     <color name="Orange">#ff8000</color>
     <color name="DarkYellow">#D7DF01</color>
+    <color name="Blue">#0044FD</color>
+    <color name="DarkBlue">#042A92</color>
+    <color name="LightBlue">#49BAFC</color>
 </resources>

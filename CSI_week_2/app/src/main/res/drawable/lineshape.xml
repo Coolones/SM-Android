@@ -4,7 +4,7 @@
     android:shape="line">
 
     <solid
-        android:background="@color/Orange">
+        android:background="@color/Blue">
 
     </solid>
 

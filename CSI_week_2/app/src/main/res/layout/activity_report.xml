@@ -17,7 +17,6 @@
 
     <ImageView
         android:id="@+id/suspect"
-        android:src="@drawable/suspect"
         style="@style/ImageView.Wanted.BelowGPS" />
 
     <ImageView
