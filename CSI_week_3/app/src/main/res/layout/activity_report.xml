@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/darkGrey"
+    tools:context="org.fhict.csi_week_1.ReportActivity">
+
+    <Button
+        android:id="@+id/GPS"
+        android:text="@string/GPS"
+        style="@style/Button.TR" />
+
+    <ImageView
+        android:id="@+id/suspect"
+        style="@style/ImageView.Wanted.BelowGPS" />
+
+    <ImageView
+        android:src="@drawable/lineshape"
+        style="@style/ImageView.Line"
+        android:layout_below="@id/suspect"></ImageView>
+
+    <Button
+        android:id="@+id/TP"
+        android:text="@string/TP"
+        style="@style/Button.TL" />
+
+    <Button
+        android:id="@+id/Call"
+        android:text="@string/C113"
+        style="@style/Button.CenterH.BelowWanted" />
+
+    <Button
+        android:id="@+id/SCAON"
+        android:text="SCA on"
+        style="@style/Button.SCAON"/>
+
+    <Button
+        android:id="@+id/SCAOFF"
+        android:text="SCA off"
+        style="@style/Button.SCAOFF"/>
+
+    <Button
+        android:id="@+id/Back"
+        android:text="@string/Back"
+        style="@style/Button.BL" />
+
+    <Button
+        android:text="@string/Send"
+        style="@style/Button.BR" />
+
+</RelativeLayout>

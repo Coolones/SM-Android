@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.fhict.csi_week_1.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/darkGrey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/Mugshot"
+            style="@style/ImageView.Wanted" />
+
+        <TableLayout style="@style/Table.SuspectInfo">
+
+            <TableRow style="@style/TableRow.SuspectInfo">
+                <TextView
+                    android:text="@string/Name"
+                    style="@style/TableText" />
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/TableText" />
+            </TableRow>
+
+            <TableRow style="@style/TableRow.SuspectInfo">
+                <TextView
+                    style="@style/TableText"
+                    android:text="@string/Gender"/>
+                <TextView
+                    android:id="@+id/gender"
+                    style="@style/TableText" />
+            </TableRow>
+
+            <TableRow style="@style/TableRow.SuspectInfo">
+                <TextView style="@style/TableText"
+                    android:text="@string/Age"/>
+                <TextView
+                    android:id="@+id/age"
+                    style="@style/TableText" />
+            </TableRow>
+
+            <TableRow style="@style/TableRow.SuspectInfo">
+                <TextView
+                    style="@style/TableText"
+                    android:text="@string/Bounty"/>
+                <TextView
+                    android:id="@+id/bounty"
+                    style="@style/TableText" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/lineshape"
+        style="@style/ImageView.Line"
+        android:background="@color/Blue">
+
+    </ImageView>
+    <LinearLayout style="@style/SuspectInfo">
+
+        <ListView
+            android:id="@+id/listViewCrimes"
+            style="@style/ListView.Crimes">
+
+        </ListView>
+
+        <LinearLayout style="@style/Details">
+
+            <TextView
+                android:text="@string/Details"
+                style="@style/Text" />
+
+            <ScrollView style="@style/ScrollView">
+
+                <TextView
+                    android:id="@+id/details"
+                    style="@style/Text"
+                    android:text="@string/details"/>
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/Report"
+                android:text="@string/Report"
+                style="@style/Button.CenterH" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
