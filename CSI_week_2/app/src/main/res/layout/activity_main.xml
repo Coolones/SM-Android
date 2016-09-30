@@ -64,8 +64,7 @@
     <ImageView
         android:src="@drawable/lineshape"
         style="@style/ImageView.Line"
-        android:layout_width="match_parent"
-        android:background="@color/Orange" />
+        android:layout_width="match_parent" />
 
     <LinearLayout style="@style/SuspectInfo">
 
