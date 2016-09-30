@@ -142,6 +142,10 @@
         <item name="android:background">@color/LightBlue</item>
     </style>
 
+    <style name="ListView.Crimes">
+        <item name="android:layout_height">115dp</item>
+    </style>
+
     <style name="Button.SCAON">
         <item name="android:layout_below">@id/Call</item>
         <item name="android:layout_toLeftOf">@id/Call</item>

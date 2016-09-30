@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.os.Vibrator;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +21,8 @@ public class ReportActivity extends AppCompatActivity {
     private final String GPS_PROVIDER = "GPS_PROVIDER";
 
     LocationManager LM = (LocationManager) getSystemService(LOCATION_SERVICE);
+    Location location;
+    Vibrator vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +46,6 @@ public class ReportActivity extends AppCompatActivity {
         ImageView mugshot = (ImageView) findViewById(R.id.suspect);
         mugshot.setBackground(criminal.mugshot);
 
-        Location location = LM.getLastKnownLocation(GPS_PROVIDER);
-
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 
             // Should we show an explanation?
@@ -57,6 +58,7 @@ public class ReportActivity extends AppCompatActivity {
                 ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, LOCATION_PERMISSION);
             }
         } else {
+            location = LM.getLastKnownLocation(GPS_PROVIDER);
             LM.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 25, new LocationListener() {
                 @Override
                 public void onLocationChanged(Location location) {
@@ -85,7 +87,12 @@ public class ReportActivity extends AppCompatActivity {
         try
         {
             Location newLocation = LM.getLastKnownLocation(GPS_PROVIDER);
+            float meters = location.distanceTo(newLocation);
 
+            if (meters < 100)
+            {
+                vibrator.vibrate(new long[] {20, 50, 100, 200, 40, 100}, 2);
+            }
         }
         catch (SecurityException ex)
         {
