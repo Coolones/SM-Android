@@ -9,7 +9,8 @@
     </solid>
 
     <stroke
-        android:width="5dp">
+        android:width="5dp"
+        android:color="@color/Blue">
     </stroke>
 
 </shape>
